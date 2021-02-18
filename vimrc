@@ -16,20 +16,27 @@ let g:typescript_compiler_binary = 'ts'
 let g:typescript_compiler_options = ''
 let g:ctrlp_working_path_mode = 0
 let g:typescript_indent_disable = 1
-let NERDTreeMapOpenInTab='\r'
+let NERDTreeMapOpenInTab='o'
+let NERDTreeMapActivateNode='v'
+let g:NERDTreeQuitOnOpen = 1
 let g:javascript_plugin_jsdoc = 1
 let g:go_version_warning = 0
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_winsize = 25
+"let g:netrw_banner = 0
+"let g:netrw_liststyle = 3
+"let g:netrw_browse_split = 4
+"let g:netrw_winsize = 25
 let g:airline#extensions#branch#enabled=1
+let g:NERDTreeHijackNetrw=1
 
 :imap ii <Esc>
+nmap ww :NERDTreeToggle<CR>
+nmap <leader>h :tabprevious<CR> 
+nmap <leader>l :tabnext<CR> 
+
 
 augroup ProjectDrawer
   autocmd!
-  autocmd VimEnter * :Vexplore
+"  autocmd VimEnter * :Vexplore
 augroup END
 
 call plug#begin('~/.vim/plugged')
