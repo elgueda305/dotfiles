@@ -32,7 +32,7 @@ let g:NERDTreeHijackNetrw=1
 nmap ww :NERDTreeToggle<CR>
 nmap <leader>h :tabprevious<CR> 
 nmap <leader>l :tabnext<CR> 
-
+nmap >lwader>tt :tab ter<CR>
 
 augroup ProjectDrawer
   autocmd!
